@@ -56,11 +56,9 @@ public class MainActivity extends AppCompatActivity
     private void setupListViewListener()
     {
         Log.i("MainActivity", "Setting up listener on list view: ");
-        lvItems.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener()
-        {
+        lvItems.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id)
-            {
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.i("MainActivity", "Item removed from list: " + position);
                 items.remove(position);
                 itemsAdapter.notifyDataSetChanged();
