@@ -14,7 +14,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:onClick="onAddItem"
-        android:text="Add"
+        android:text="@string/add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -27,7 +27,6 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:entries="\"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,9 +39,10 @@
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="17dp"
         android:ems="10"
-        android:hint="Enter New Item Here"
+        android:hint="@string/enter_new_item_here"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="" tools:targetApi="o"/>
 
 </android.support.constraint.ConstraintLayout>

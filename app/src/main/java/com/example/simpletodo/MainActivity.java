@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity
         lvItems.setAdapter(itemsAdapter);
 
         //mock data
-        items.add("First Item");
-        items.add("Second Item");
+        //items.add("First Item");
+        //items.add("Second Item");
 
         setupListViewListener();
 
